@@ -1,0 +1,29 @@
+//atividade 10 questao 2
+#include <stdlib.h>
+#include <stdio.h>
+
+int menorElemento(int vetor[0], int tamanho, int menor){
+    tamanho = 10;
+    menor = 1000;
+    int posicao = -1;
+    for (int i = 0; i < tamanho; i++){
+        
+        if (vetor[i] < menor){
+            menor = vetor[i];
+            
+        } 
+        
+    }
+    printf("O menor é %d\n",menor); 
+}
+
+int main()
+{
+    int tam = 10;
+    int menor;
+    int meuVetor[] = {12,4,2,67,81,5,9,1,6,34};
+    menorElemento(meuVetor,tam,menor);
+    
+
+    return 0;
+}
