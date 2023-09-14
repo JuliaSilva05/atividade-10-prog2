@@ -1,0 +1,25 @@
+//atividade 10 questao 4
+#include <stdlib.h>
+#include <stdio.h>
+
+int elemIguais(int vetor[0], int tamanho, int igual){
+    int i,j;
+    for (i = 0; i < tamanho; i++) {
+        for (j = i+1; j < tamanho; j++) {
+            if (vetor[i] == vetor[j]) {
+                printf("Valor repetido: %d\n", vetor[i]);
+                
+            }
+        }
+}
+}
+
+int main()
+{
+    int tam = 10;
+    int igual;
+    int meuVetor[] = {12,4,2,67,81,8,4,60,9,10};
+    elemIguais(meuVetor,tam,igual);
+
+    return 0;
+}
